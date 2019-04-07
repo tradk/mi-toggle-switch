@@ -1,4 +1,4 @@
-//@flow
+// @flow
 import * as React from 'react';
 import { StyledMiToggleSwitch } from './style';
 
@@ -15,6 +15,7 @@ type Props = {
   deactiveColor?: string,
   ballColor?: string,
   className?: string,
+  type?: 'rectangular' | 'rounded',
 };
 
 // flow define state
@@ -24,13 +25,14 @@ type State = {
 
 // default props
 const defaultProps = {
-  isEnable: true,
+  isEnable: false,
   isStateChange: true,
   height: 32,
   spacing: 2,
   ballColor: '#ffffff',
   activeColor: '#62c28e',
-  deactiveColor: '#cccccc'
+  deactiveColor: '#cccccc',
+  type: 'rounded',
 };
 
 class MiToggleSwitch extends React.Component<Props, State> {
@@ -65,7 +67,7 @@ class MiToggleSwitch extends React.Component<Props, State> {
         this.isFunction(onStateChanged) && onStateChanged(state);
       });
     } else {
-      this.contextisFunction(onClick) && onClick();
+      this.isFunction(onClick) && onClick();
     }
   }
 
