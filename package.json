@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/tradk/mi-toggle-switch",
   "scripts": {
+    "flow": "flow",
     "start": "react-scripts start",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "build-examples": "react-scripts build",
@@ -42,6 +43,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "flow-bin": "^0.96.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8",
