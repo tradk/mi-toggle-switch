@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MiToggleSwitch renders properly 1`] = `
+.c0 {
+  height: 32px;
+  width: 52px;
+  cursor: pointer !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  position: relative !important;
+  display: inline-block;
+}
+
+.c0:before {
+  content: '';
+  left: 0;
+  position: absolute !important;
+  height: inherit;
+  width: inherit;
+  border-radius: 16px;
+  will-change: background;
+  -webkit-transition: background .4s .3s ease-out;
+  transition: background .4s .3s ease-out;
+}
+
+.c0:after {
+  content: '';
+  left: 0;
+  position: absolute !important;
+  top: 2px;
+  height: 28px;
+  width: 28px;
+  border-radius: 14px;
+  background: #ffffff !important;
+  will-change: transform;
+  -webkit-transition: -webkit-transform .4s ease-out;
+  -webkit-transition: transform .4s ease-out;
+  transition: transform .4s ease-out;
+}
+
+.c0::before {
+  background: #cccccc !important;
+}
+
+.c0::after {
+  -webkit-transform: translateX(2px);
+  -ms-transform: translateX(2px);
+  transform: translateX(2px);
+}
+
+<div
+  className="c0"
+  height={32}
+  onClick={[Function]}
+  spacing={2}
+  type="rounded"
+/>
+`;
