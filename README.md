@@ -10,6 +10,30 @@ Mi-Toggle-Switch is a React component library build with [styled-components](htt
 
 ## Installation
 You can use either npm
+
 ```npm i mi-toggle-switch```
+
 or yarn
+
 ```yarn add mi-toggle-switch```
+
+## Basic Usage
+```js
+import React from "react";
+import { MiToggleSwitch } from "mi-toggle-switch";
+
+class App extends React.Component {
+  render() {
+    return (
+      <MiToggleSwitch />
+    );
+  }
+}
+
+export default App;
+```
+
+## PropTypes and defaultProps
+
+## License
+Mi-Toggle-Switch is [MIT licensed](https://github.com/tradk/mi-toggle-switch/blob/master/LICENSE).
