@@ -1,6 +1,7 @@
 {
   "name": "mi-toggle-switch",
   "version": "0.1.0",
+  "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -22,32 +23,30 @@
   "scripts": {
     "flow": "flow",
     "start": "react-scripts start",
+    "build-scripts": "react-scripts build",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
-    "build-examples": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "peerDependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.96.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4",
+    "react-test-renderer": "^16.3.2",
+    "styled-components": "^4.2.0"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-components": "^4.2.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "flow-bin": "^0.96.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8",
-    "react-test-renderer": "^16.8.6",
-    "styled-components": "^4.2.0"
-  }
+  ]
 }
