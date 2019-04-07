@@ -20,6 +20,13 @@
     "url": "https://github.com/tradk/mi-toggle-switch/issues"
   },
   "homepage": "https://github.com/tradk/mi-toggle-switch",
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-component",
+    "styled-components",
+    "toggle-switches"
+  ],
   "scripts": {
     "flow": "flow",
     "start": "react-scripts start",
