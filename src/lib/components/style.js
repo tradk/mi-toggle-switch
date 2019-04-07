@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components';
 
+const stretchFactor = 1.625;
+
 /**
  * return switch toggle height
  */
@@ -12,13 +14,13 @@ const returnHeight = props => {
  */
 const returnWidth = props => {
   if (props.width) {
-    if (props.width <= props.height * 1.625) {
-      return props.height * 1.625;
+    if (props.width <= props.height * stretchFactor) {
+      return props.height * stretchFactor;
     } else {
       return props.width;
     }
   } else {
-    return props.height * 1.625;
+    return props.height * stretchFactor;
   }
 }
 
@@ -26,7 +28,11 @@ const returnWidth = props => {
  * return boder radius
  */
 const returnBorderRadius = props => {
-  return props.height / 2;
+  if (props.type === 'rectangular') {
+    return 0;
+  } else {
+    return props.height / 2;
+  }
 };
 
 // return propertis for ball switch toggle
@@ -48,7 +54,11 @@ const returnBallSize = props => {
  * return ball radius
  */
 const returnBallRadius = props => {
-  return (props.height - (props.spacing * 2)) / 2;
+  if (props.type === 'rectangular') {
+    return 0;
+  } else {
+    return (props.height - (props.spacing * 2)) / 2;
+  }
 };
 
 /**
