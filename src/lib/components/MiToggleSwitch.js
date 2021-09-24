@@ -45,7 +45,7 @@ class MiToggleSwitch extends React.Component<Props, State> {
   };
 
   // Update state when props change
-  componentWillReceiveProps(nextProps) {
+  componentDidUpdate(nextProps) {
     if (nextProps.isEnable !== this.state.enabled) {
       this.setState({ enabled: nextProps.isEnable });
     }
